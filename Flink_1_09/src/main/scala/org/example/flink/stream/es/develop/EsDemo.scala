@@ -3,7 +3,7 @@ package org.example.flink.stream.es.develop
 import java.util
 import java.util.Properties
 
-import com.test.flink.stream.es.entry.{JsonDeserializationSchema, TestElasticsearchSinkFunction}
+import org.example.flink.stream.es.entry.{JsonDeserializationSchema, TestElasticsearchSinkFunction}
 import org.apache.flink.streaming.api.scala._
 import org.apache.flink.streaming.api.scala.StreamExecutionEnvironment
 import org.apache.flink.streaming.connectors.elasticsearch6.ElasticsearchSink

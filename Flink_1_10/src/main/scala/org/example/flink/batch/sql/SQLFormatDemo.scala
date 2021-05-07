@@ -1,6 +1,6 @@
 package org.example.flink.batch.sql
 
-import com.test.flink.commons.CreateDDL
+import org.example.flink.commons.CreateDDL
 import org.apache.flink.streaming.api.scala.StreamExecutionEnvironment
 import org.apache.flink.table.api.EnvironmentSettings
 import org.apache.flink.table.api.scala.StreamTableEnvironment

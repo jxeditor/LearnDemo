@@ -1,6 +1,6 @@
 package org.example.flink.stream.window.sql
 
-import com.test.flink.commons.CreateDDL
+import org.example.flink.commons.CreateDDL
 import org.apache.flink.streaming.api.scala.{DataStream, StreamExecutionEnvironment}
 import org.apache.flink.table.api.scala._
 import org.apache.flink.api.common.typeinfo.{BasicTypeInfo, TypeInformation, Types}

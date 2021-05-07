@@ -1,6 +1,6 @@
 package org.example.flink.stream.es
 
-import com.test.flink.stream.es.param.EnvironmentalKey
+import org.example.flink.stream.es.param.EnvironmentalKey
 
 /**
  * @Author: xs

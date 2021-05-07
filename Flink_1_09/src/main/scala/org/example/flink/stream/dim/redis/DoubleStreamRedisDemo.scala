@@ -1,6 +1,6 @@
 package org.example.flink.stream.dim.redis
 
-import com.test.flink.redis.RedisAsyncLookupTableSource
+import org.example.flink.redis.RedisAsyncLookupTableSource
 import org.apache.flink.api.common.typeinfo.{BasicTypeInfo, TypeInformation, Types}
 import org.apache.flink.api.scala._
 import org.apache.flink.streaming.api.scala.{DataStream, StreamExecutionEnvironment}

@@ -2,9 +2,9 @@ package org.example.flink.stream.udx
 
 import java.util.TimeZone
 
-import com.test.flink.stream.udx.udaf.CollectListUDAF
-import com.test.flink.stream.udx.udf.UpperUDF
-import com.test.flink.stream.udx.udtf.{TransformC2RUDTF, TransformR2CUDTF}
+import org.example.flink.stream.udx.udaf.CollectListUDAF
+import org.example.flink.stream.udx.udf.UpperUDF
+import org.example.flink.stream.udx.udtf.{TransformC2RUDTF, TransformR2CUDTF}
 import org.apache.flink.api.java.io.jdbc.{JDBCOptions, JDBCTableSource}
 import org.apache.flink.api.scala._
 import org.apache.flink.streaming.api.datastream.DataStreamSource

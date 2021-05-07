@@ -2,7 +2,7 @@ package org.example.flink.stream.dim.mysql
 
 import java.util.Properties
 
-import com.test.flink.stream.udx.udaf.CollectListUDAF
+import org.example.flink.stream.udx.udaf.CollectListUDAF
 import org.apache.flink.api.common.serialization.SimpleStringSchema
 import org.apache.flink.api.java.io.jdbc.{JDBCOptions, JDBCTableSource}
 import org.apache.flink.streaming.api.scala.{DataStream, StreamExecutionEnvironment}

@@ -1,6 +1,6 @@
 package org.example.flink.stream.es.entry
 
-import com.test.flink.stream.es.develop.{ES_INDEX, ES_TYPE}
+import org.example.flink.stream.es.develop.{ES_INDEX, ES_TYPE}
 import org.apache.flink.api.common.functions.RuntimeContext
 import org.apache.flink.streaming.connectors.elasticsearch.{ElasticsearchSinkFunction, RequestIndexer}
 import org.elasticsearch.action.get.GetRequest

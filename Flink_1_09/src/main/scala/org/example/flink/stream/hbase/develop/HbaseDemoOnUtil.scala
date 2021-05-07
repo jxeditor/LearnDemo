@@ -1,6 +1,6 @@
 package org.example.flink.stream.hbase.develop
 
-import com.test.flink.stream.hbase.util.HbaseUtil
+import org.example.flink.stream.hbase.util.HbaseUtil
 import org.apache.flink.streaming.api.scala.StreamExecutionEnvironment
 import org.apache.hadoop.hbase.client.Put
 import org.apache.flink.streaming.api.scala._

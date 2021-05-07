@@ -2,7 +2,7 @@ package org.example.flink.stream.window
 
 import java.util.Properties
 
-import com.test.flink.stream.hive.JsonDeserializationSchema
+import org.example.flink.stream.hive.JsonDeserializationSchema
 import org.apache.flink.api.common.serialization.SimpleStringSchema
 import org.apache.flink.runtime.state.filesystem.FsStateBackend
 import org.apache.flink.streaming.api.TimeCharacteristic

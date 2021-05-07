@@ -1,7 +1,7 @@
 package org.example.flink.stream.dim.hbase
 
-import com.test.flink.hbase.HBaseAsyncLookupTableSource
-import com.test.flink.redis.RedisAsyncLookupTableSource
+import org.example.flink.hbase.HBaseAsyncLookupTableSource
+import org.example.flink.redis.RedisAsyncLookupTableSource
 import org.apache.flink.api.common.typeinfo.Types
 import org.apache.flink.api.java.io.jdbc.{JDBCAppendTableSink, JDBCOptions, JDBCUpsertTableSink}
 import org.apache.flink.api.scala._

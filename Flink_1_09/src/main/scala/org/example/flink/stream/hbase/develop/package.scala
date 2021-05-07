@@ -1,6 +1,6 @@
 package org.example.flink.stream.hbase
 
-import com.test.flink.stream.hbase.param.EnvironmentalKey
+import org.example.flink.stream.hbase.param.EnvironmentalKey
 
 package object develop extends EnvironmentalKey{
 

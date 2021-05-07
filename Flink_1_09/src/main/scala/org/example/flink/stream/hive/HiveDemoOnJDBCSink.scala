@@ -1,6 +1,6 @@
 package org.example.flink.stream.hive
 
-import com.test.flink.stream.mysql.JDBCDemo.Order
+import org.example.flink.stream.mysql.JDBCDemo.Order
 import org.apache.flink.api.common.typeinfo.{BasicTypeInfo, TypeInformation}
 import org.apache.flink.api.java.io.jdbc.JDBCAppendTableSink
 import org.apache.flink.streaming.api.scala.StreamExecutionEnvironment
