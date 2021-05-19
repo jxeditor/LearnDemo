@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="hudi-flink-bundle_2.11-0.9.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Flink/src/main/resources/libs/hudi-flink-bundle_2.11-0.9.0-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

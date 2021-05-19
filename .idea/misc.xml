@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/Algorithm/pom.xml" />
+        <option value="$PROJECT_DIR$/Demand/pom.xml" />
+        <option value="$PROJECT_DIR$/ScalaIdea/pom.xml" />
+        <option value="$PROJECT_DIR$/Flink/pom.xml" />
+        <option value="$PROJECT_DIR$/Prometheus/pom.xml" />
+        <option value="$PROJECT_DIR$/Spark/pom.xml" />
+        <option value="$PROJECT_DIR$/Kafka/pom.xml" />
+        <option value="$PROJECT_DIR$/Metics/pom.xml" />
+        <option value="$PROJECT_DIR$/Flink_1_11/pom.xml" />
+        <option value="$PROJECT_DIR$/Flink_1_09/pom.xml" />
+        <option value="$PROJECT_DIR$/Flink_1_10/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

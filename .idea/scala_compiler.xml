@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ScalaCompilerConfiguration">
+    <profile name="Maven 1" modules="Algorithm,Demand,Flink_1_09,Flink_1_10,Flink_1_11,LearnDemo,Spark">
+      <parameters>
+        <parameter value="-target:jvm-1.8" />
+      </parameters>
+    </profile>
+    <profile name="Maven 2" modules="ScalaIdea">
+      <parameters>
+        <parameter value="-target:jvm-1.5" />
+      </parameters>
+    </profile>
+    <profile name="Maven 3" modules="Flink" />
+  </component>
+</project>
