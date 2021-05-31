@@ -7,14 +7,15 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ScalaIdea" />
-        <module name="Flink_1_09" />
+        <module name="Flink" />
         <module name="Metics" />
         <module name="Prometheus" />
+        <module name="Flink_1_12" />
         <module name="Flink_1_11" />
         <module name="Flink_1_10" />
         <module name="Kafka" />
         <module name="Spark" />
-        <module name="Flink" />
+        <module name="Flink_1_09" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8" />

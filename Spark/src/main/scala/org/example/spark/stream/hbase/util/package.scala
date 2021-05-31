@@ -1,6 +1,6 @@
 package org.example.spark.stream.hbase
 
-import org.example.spark.spark240.stream.hbase.param.EnvironmentalKey
+import org.example.spark.stream.hbase.param.EnvironmentalKey
 
 /**
  * @Author: xs

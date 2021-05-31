@@ -11,6 +11,6 @@
         <parameter value="-target:jvm-1.5" />
       </parameters>
     </profile>
-    <profile name="Maven 3" modules="Flink" />
+    <profile name="Maven 3" modules="Flink,Flink_1_12" />
   </component>
 </project>
