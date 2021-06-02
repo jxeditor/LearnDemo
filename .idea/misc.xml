@@ -17,6 +17,8 @@
         <option value="$PROJECT_DIR$/Flink_1_09/pom.xml" />
         <option value="$PROJECT_DIR$/Flink_1_10/pom.xml" />
         <option value="$PROJECT_DIR$/Flink_1_12/pom.xml" />
+        <option value="$PROJECT_DIR$/Drools/pom.xml" />
+        <option value="$PROJECT_DIR$/Aviator/pom.xml" />
       </list>
     </option>
   </component>
