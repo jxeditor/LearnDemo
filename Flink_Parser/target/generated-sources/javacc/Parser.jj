@@ -4670,6 +4670,57 @@ SqlNode OrderItem() :
     }
 }
 
+SqlNodeList SortedBy(boolean accept) :
+{
+    List<SqlNode> list;
+    SqlNode e;
+    final Span s;
+}
+{
+    <SORTED> {
+        s = span();
+        if (!accept) {
+            throw SqlUtil.newContextException(s.pos(), RESOURCE.illegalOrderBy());
+        }
+    }
+    <BY> e = SortedItem() {
+        list = startList(e);
+    }
+    (
+        LOOKAHEAD(2) <COMMA> e = SortedItem() { list.add(e); }
+    )*
+    {
+        return new SqlNodeList(list, s.addAll(list).pos());
+    }
+}
+
+SqlNode SortedItem() :
+{
+    SqlNode e;
+}
+{
+    e = Expression(ExprContext.ACCEPT_SUB_QUERY)
+    (
+        <ASC>
+    |   <DESC> {
+            e = SqlStdOperatorTable.DESC.createCall(getPos(), e);
+        }
+    )?
+    (
+        LOOKAHEAD(2)
+        <NULLS> <FIRST> {
+            e = SqlStdOperatorTable.NULLS_FIRST.createCall(getPos(), e);
+        }
+    |
+        <NULLS> <LAST> {
+            e = SqlStdOperatorTable.NULLS_LAST.createCall(getPos(), e);
+        }
+    )?
+    {
+        return e;
+    }
+}
+
 /**
  * Parses a FOR SYSTEM_TIME clause following a table expression.
  */
@@ -9432,6 +9483,7 @@ SqlPostfixOperator PostfixRowOperator() :
 |   < SKIP_: "SKIP" >
 |   < SMALLINT: "SMALLINT" >
 |   < SOME: "SOME" >
+|   < SORTED: "SORTED" >
 |   < SOURCE: "SOURCE" >
 |   < SPACE: "SPACE" >
 |   < SPECIFIC: "SPECIFIC" >

@@ -406,6 +406,12 @@ public class FlinkSqlParserImplTest extends SqlParserTest {
     }
 
     @Test
+    public void testSortedBy() {
+        sql("select * from test order by a desc").ok("select * from test order by a desc");
+    }
+
+
+    @Test
     public void testTableConstraints() {
         final String sql =
                 "CREATE TABLE tbl1 (\n"
