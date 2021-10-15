@@ -1,9 +1,13 @@
 package org.example.leetcode.q0001t0100.q1;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * @Author: xs
  * @Date: 2019-12-19 11:06
- * @Description: 给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那 两个 整数，并返回他们的数组下标。
+ * @Description: 给定一个整数数组 nums 和一个目标值 target，
+ * 请你在该数组中找出和为目标值的那两个整数，并返回他们的数组下标。
  * <p>
  * 你可以假设每种输入只会对应一个答案。但是，你不能重复利用这个数组中同样的元素。
  * <p>
@@ -32,9 +36,15 @@ public class Question0001 {
         }
     }
 
-    private static void solution02(int[] nums, int target) {
-        for (int i = 0; i < nums.length; i++) {
-
+    private static int[] solution02(int[] nums, int target) {
+        // 思路: 目标值减去数组值,如果与另一个数组相等,就符合两数之和
+        Map<Integer, Integer> hashtable = new HashMap<Integer, Integer>();
+        for (int i = 0; i < nums.length; ++i) {
+            if (hashtable.containsKey(target - nums[i])) {
+                return new int[]{hashtable.get(target - nums[i]), i};
+            }
+            hashtable.put(nums[i], i);
         }
+        return new int[0];
     }
 }
