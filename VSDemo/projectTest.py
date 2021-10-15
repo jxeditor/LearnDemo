@@ -36,6 +36,7 @@ if __name__ == '__main__':
     print("获取定制合约交易: " + rightPart.text.replace('\n', '').replace('\r', ''))
 
 
-
-
+    # 测试
+    containerbck = driver.find_element_by_xpath('//*[@class="containerbck"]/div')
+    print(containerbck.text)
 run()
