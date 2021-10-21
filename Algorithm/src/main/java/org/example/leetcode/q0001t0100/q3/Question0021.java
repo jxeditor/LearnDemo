@@ -65,7 +65,7 @@ public class Question0021 {
         ListNode prehead = new ListNode(-1);
         ListNode prev = prehead;
         while (l1 != null && l2 != null) {
-            // 当l1链表的值比l2的小,l1作为初始链表
+            // 当l1链表头节点的值比l2的小,l1作为初始链表
             if (l1.val <= l2.val) {
                 prev.next = l1;
                 l1 = l1.next;
