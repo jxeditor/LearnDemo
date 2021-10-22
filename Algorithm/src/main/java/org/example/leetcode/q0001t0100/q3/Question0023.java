@@ -88,7 +88,7 @@ public class Question0023 {
 
         ListNode[] lists = {a, b, c};
         ListNode result = mergeKLists(lists);
-        while (result.next != null){
+        while (result != null){
             System.out.println(result.val);
             result = result.next;
         }
