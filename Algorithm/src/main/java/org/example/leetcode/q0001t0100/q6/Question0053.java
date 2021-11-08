@@ -40,6 +40,16 @@ package org.example.leetcode.q0001t0100.q6;
  */
 public class Question0053 {
     public int maxSubArray(int[] nums) {
-
+        int sum = 0;
+        int max = nums[0];
+        // 和值,极值
+        //
+        // 当前值加上原先和值反而比当前值小,那么计算位置当从该位置进行重新计算
+        // 极值用于对比历史已经出现过的最大值
+        for (int i = 0; i < nums.length; i++) {
+            sum = Math.max(nums[i], sum + nums[i]);
+            max = Math.max(sum, max);
+        }
+        return max;
     }
 }
