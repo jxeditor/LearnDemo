@@ -66,18 +66,13 @@ public class Question0086 {
             }
             head = head.next;
         }
-
-        System.out.println(l1h.next.val);
-        System.out.println(l2h.next.val);
-
         l2.next = null;
         l1.next = l2h.next;
-
         return l1h.next;
     }
 
     public static void main(String[] args) {
         ListNode node = partition(new ListNode(1, new ListNode(4, new ListNode(3, new ListNode(2, new ListNode(5, new ListNode(2)))))), 3);
-        System.out.println(node.val+"-"+node.next.val+"-"+node.next.next.val);
+        System.out.println(node.val + "-" + node.next.val + "-" + node.next.next.val);
     }
 }
