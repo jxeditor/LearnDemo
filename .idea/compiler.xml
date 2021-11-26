@@ -10,12 +10,14 @@
         <module name="Kafka" />
         <module name="Prometheus" />
         <module name="Flink_1_10" />
+        <module name="Flink_1_13" />
         <module name="Flink_1_12" />
         <module name="Aviator" />
         <module name="Flink" />
         <module name="Flink_Parser" />
         <module name="Drools" />
         <module name="Flink_1_09" />
+        <module name="Flink_1_14" />
         <module name="Metics" />
         <module name="ScalaIdea" />
         <module name="Spark" />
