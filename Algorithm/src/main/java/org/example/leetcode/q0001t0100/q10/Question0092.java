@@ -27,7 +27,7 @@ package org.example.leetcode.q0001t0100.q10;
  * 链表
  */
 public class Question0092 {
-    public class ListNode {
+    public static class ListNode {
         int val;
         ListNode next;
 
@@ -44,7 +44,7 @@ public class Question0092 {
         }
     }
 
-    public ListNode reverseBetween(ListNode head, int left, int right) {
+    public static ListNode reverseBetween(ListNode head, int left, int right) {
         // 因为头节点有可能发生变化，使用虚拟头节点可以避免复杂的分类讨论
         ListNode dummyNode = new ListNode(-1);
         dummyNode.next = head;
@@ -62,6 +62,7 @@ public class Question0092 {
         // 第 3 步：切断出一个子链表（截取链表）
         ListNode leftNode = pre.next;
         ListNode curr = rightNode.next;
+        System.out.println(curr.val);
         // 注意：切断链接
         pre.next = null;
         rightNode.next = null;
@@ -72,8 +73,15 @@ public class Question0092 {
         leftNode.next = curr;
         return dummyNode.next;
     }
+//    解题步骤
+//    leftNode 1 2 3 4 5
+//    rightNode 3 4 5
+//    curr = 4 5
+//    pre = 0 null
+//    rightNode = 3 null
+//    0 3 2 1 4 5
 
-    private void reverseLinkedList(ListNode head) {
+    private static void reverseLinkedList(ListNode head) {
         // 也可以使用递归反转一个链表
         ListNode pre = null;
         ListNode cur = head;
@@ -85,29 +93,13 @@ public class Question0092 {
         }
     }
 
-
-    // 思路: 将链表切割成3份,left,mid,right,最终将mid进行反转之后拼接
-    public ListNode reverseBetween1(ListNode head, int left, int right) {
-        ListNode l = new ListNode(0);
-        ListNode ln = l;
-        ListNode r = new ListNode(0);
-        ListNode rn = r;
-        ListNode m = new ListNode(0);
-        ListNode mn = m;
-
-        // 1,2,3,4,5 1,3
-        for (int i = 0; i < left; i++) {
-            l.next = head;
-            l = l.next;
-            head = head.next;
+    public static void main(String[] args) {
+        ListNode node = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));
+        ListNode res = reverseBetween(node, 1, 3);
+        while (res != null) {
+            System.out.println(res.val);
+            res = res.next;
         }
-
-        for (int i = 0; i < right - left - 1; i++) {
-            l = head;
-            l = l.next;
-            head = head.next;
-        }
-        return l;
     }
 
 }
